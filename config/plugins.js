@@ -8,4 +8,7 @@ module.exports = {
       depthLimit: 7,
       amountLimit: 50,
     },
+    "vercel-deploy": {
+      enabled: true,
+    },
   };
