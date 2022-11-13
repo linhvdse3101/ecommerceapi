@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
-  host: env("HOST", "100.20.92.101"),
-  port: env.int("PORT", 1337),
+  host: env("HOST", "ecommerceapi-kz2w"),
+  port: env.int("PORT", 10000),
   admin: {
     auth: {
       secret: env("ADMIN_JWT_SECRET", "828811e8aace1aa789067dffc85af376"),
