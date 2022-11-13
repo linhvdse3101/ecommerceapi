@@ -12,6 +12,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "file-loader": "^6.2.0",
     "knex": "<0.20.0",
     "slugify": "^1.4.5",
     "sqlite3": "5.0.2",
