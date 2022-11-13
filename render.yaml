@@ -1,14 +1,14 @@
 services:
   - type: web
-    name: strapi
+    name: ecommerceAPI
     env: node
     plan: starter
     buildCommand: yarn install --force && yarn build
-    startCommand: rsync -a public/ && yarn start
+    startCommand: rsync -a public/ /db/ && yarn start
     healthCheckPath: /_health
     disk:
       name: strapi-data
-      mountPath: /
+      mountPath: /db
       sizeGB: 1
     envVars:
       - key: NODE_VERSION
