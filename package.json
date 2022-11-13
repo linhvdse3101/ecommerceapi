@@ -12,6 +12,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@strapi/design-system": "^1.2.8",
     "@strapi/icons": "^1.2.8",
     "file-loader": "^6.2.0",
     "knex": "<0.20.0",
