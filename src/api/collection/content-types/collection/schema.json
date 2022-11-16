@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "collection",
+  "info": {
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "collection"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "products": {
+      "via": "collection",
+      "collection": "product",
+      "dominant": true
+    }
+  }
+}

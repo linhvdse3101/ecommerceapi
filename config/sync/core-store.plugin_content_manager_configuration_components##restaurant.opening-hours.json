@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::restaurant.opening-hours",
+  "value": {
+    "uid": "restaurant.opening-hours",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "day_interval",
+      "defaultSortBy": "day_interval",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "day_interval": {
+        "edit": {
+          "label": "day_interval",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "day_interval",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "opening_hour": {
+        "edit": {
+          "label": "opening_hour",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "opening_hour",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "closing_hour": {
+        "edit": {
+          "label": "closing_hour",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "closing_hour",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "day_interval",
+        "opening_hour",
+        "closing_hour"
+      ],
+      "edit": [
+        [
+          {
+            "name": "day_interval",
+            "size": 6
+          },
+          {
+            "name": "opening_hour",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "closing_hour",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

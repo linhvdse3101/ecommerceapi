@@ -1,0 +1,200 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::cookie.cookie",
+  "value": {
+    "uid": "api::cookie.cookie",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "host": {
+        "edit": {
+          "label": "host",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "host",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "category": {
+        "edit": {
+          "label": "category",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "category",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "party": {
+        "edit": {
+          "label": "party",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "party",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "isVisible": {
+        "edit": {
+          "label": "isVisible",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "isVisible",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "duration": {
+        "edit": {
+          "label": "duration",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "duration",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "name",
+        "description",
+        "host"
+      ],
+      "editRelations": [
+        "category"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "host",
+            "size": 6
+          },
+          {
+            "name": "party",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "isVisible",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "duration",
+            "size": 12
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

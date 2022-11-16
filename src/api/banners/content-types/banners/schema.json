@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banners",
+    "pluralName": "banner",
+    "displayName": "banners"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "slug": {
+      "type": "string",
+      "targetField": "name"
+    },
+
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variants.items"
+    }
+  }
+}

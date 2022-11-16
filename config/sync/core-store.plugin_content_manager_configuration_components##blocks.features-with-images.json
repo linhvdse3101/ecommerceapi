@@ -1,0 +1,138 @@
+{
+  "key": "plugin_content_manager_configuration_components::blocks.features-with-images",
+  "value": {
+    "uid": "blocks.features-with-images",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "header": {
+        "edit": {
+          "label": "header",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "header",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "text": {
+        "edit": {
+          "label": "text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "theme": {
+        "edit": {
+          "label": "theme",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "theme",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "featuresCheck": {
+        "edit": {
+          "label": "featuresCheck",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "featuresCheck",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "header",
+        "text",
+        "theme"
+      ],
+      "edit": [
+        [
+          {
+            "name": "header",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "text",
+            "size": 6
+          },
+          {
+            "name": "theme",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "featuresCheck",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

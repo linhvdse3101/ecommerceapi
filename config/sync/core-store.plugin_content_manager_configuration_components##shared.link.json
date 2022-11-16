@@ -1,0 +1,116 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.link",
+  "value": {
+    "uid": "shared.link",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "href",
+      "defaultSortBy": "href",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "href": {
+        "edit": {
+          "label": "href",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "href",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "label": {
+        "edit": {
+          "label": "label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "label",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "target": {
+        "edit": {
+          "label": "target",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "target",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "isExternal": {
+        "edit": {
+          "label": "isExternal",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "isExternal",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "href",
+        "label",
+        "target"
+      ],
+      "edit": [
+        [
+          {
+            "name": "href",
+            "size": 6
+          },
+          {
+            "name": "label",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "target",
+            "size": 6
+          },
+          {
+            "name": "isExternal",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

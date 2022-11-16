@@ -1,0 +1,1335 @@
+{
+  "name": "Author",
+  "code": "strapi-author",
+  "description": "Authors can manage the content they have created.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "image",
+          "content",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "publicationState",
+          "category",
+          "editors",
+          "publicationStages"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "image",
+          "content",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "publicationState",
+          "category",
+          "editors",
+          "publicationStages"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "image",
+          "content",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "publicationState",
+          "category",
+          "editors",
+          "publicationStages"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::banners.banners",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "items.isImage",
+          "items.image",
+          "items.title",
+          "items.desc",
+          "items.btn_text",
+          "items.desc_hightlight",
+          "items.text_on_top"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::banners.banners",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::banners.banners",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "items.isImage",
+          "items.image",
+          "items.title",
+          "items.desc",
+          "items.btn_text",
+          "items.desc_hightlight",
+          "items.text_on_top"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::banners.banners",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "items.isImage",
+          "items.image",
+          "items.title",
+          "items.desc",
+          "items.btn_text",
+          "items.desc_hightlight",
+          "items.text_on_top"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::blog-page.blog-page",
+      "properties": {
+        "fields": [
+          "header.theme",
+          "header.label",
+          "header.title",
+          "slug",
+          "categoryText",
+          "articlesPerPage",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::blog-page.blog-page",
+      "properties": {
+        "fields": [
+          "header.theme",
+          "header.label",
+          "header.title",
+          "slug",
+          "categoryText",
+          "articlesPerPage",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::blog-page.blog-page",
+      "properties": {
+        "fields": [
+          "header.theme",
+          "header.label",
+          "header.title",
+          "slug",
+          "categoryText",
+          "articlesPerPage",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::brand.brand",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::brand.brand",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::brand.brand",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::brand.brand",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "restaurants",
+          "articles"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "restaurants",
+          "articles"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "restaurants",
+          "articles"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::collection.collection",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::collection.collection",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::collection.collection",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::collection.collection",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "navigation.links.href",
+          "navigation.links.label",
+          "navigation.links.target",
+          "navigation.links.isExternal",
+          "navigation.leftButton.href",
+          "navigation.leftButton.label",
+          "navigation.leftButton.target",
+          "navigation.leftButton.isExternal",
+          "navigation.rightButton.href",
+          "navigation.rightButton.label",
+          "navigation.rightButton.target",
+          "navigation.rightButton.isExternal",
+          "footer.footerColumns.title",
+          "footer.footerColumns.links.href",
+          "footer.footerColumns.links.label",
+          "footer.footerColumns.links.target",
+          "footer.footerColumns.links.isExternal",
+          "footer.socialNetworks.url",
+          "footer.button.theme",
+          "footer.button.link.href",
+          "footer.button.link.label",
+          "footer.button.link.target",
+          "footer.button.link.isExternal",
+          "footer.label"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "navigation.links.href",
+          "navigation.links.label",
+          "navigation.links.target",
+          "navigation.links.isExternal",
+          "navigation.leftButton.href",
+          "navigation.leftButton.label",
+          "navigation.leftButton.target",
+          "navigation.leftButton.isExternal",
+          "navigation.rightButton.href",
+          "navigation.rightButton.label",
+          "navigation.rightButton.target",
+          "navigation.rightButton.isExternal",
+          "footer.footerColumns.title",
+          "footer.footerColumns.links.href",
+          "footer.footerColumns.links.label",
+          "footer.footerColumns.links.target",
+          "footer.footerColumns.links.isExternal",
+          "footer.socialNetworks.url",
+          "footer.button.theme",
+          "footer.button.link.href",
+          "footer.button.link.label",
+          "footer.button.link.target",
+          "footer.button.link.isExternal",
+          "footer.label"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "navigation.links.href",
+          "navigation.links.label",
+          "navigation.links.target",
+          "navigation.links.isExternal",
+          "navigation.leftButton.href",
+          "navigation.leftButton.label",
+          "navigation.leftButton.target",
+          "navigation.leftButton.isExternal",
+          "navigation.rightButton.href",
+          "navigation.rightButton.label",
+          "navigation.rightButton.target",
+          "navigation.rightButton.isExternal",
+          "footer.footerColumns.title",
+          "footer.footerColumns.links.href",
+          "footer.footerColumns.links.label",
+          "footer.footerColumns.links.target",
+          "footer.footerColumns.links.isExternal",
+          "footer.socialNetworks.url",
+          "footer.button.theme",
+          "footer.button.link.href",
+          "footer.button.link.label",
+          "footer.button.link.target",
+          "footer.button.link.isExternal",
+          "footer.label"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "editors"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "editors"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "editors"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::place.place",
+      "properties": {
+        "fields": [
+          "name",
+          "restaurants"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::place.place",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::place.place",
+      "properties": {
+        "fields": [
+          "name",
+          "restaurants"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::place.place",
+      "properties": {
+        "fields": [
+          "name",
+          "restaurants"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::post-category.post-category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "posts"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::post-category.post-category",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::post-category.post-category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "posts"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::post-category.post-category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "posts"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::post.post",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "short_description",
+          "thumbnail",
+          "post_categories",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::post.post",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::post.post",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "short_description",
+          "thumbnail",
+          "post_categories",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::post.post",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "short_description",
+          "thumbnail",
+          "post_categories",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::product-categories.product-categories",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::product-categories.product-categories",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::product-categories.product-categories",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::product-categories.product-categories",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "products"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "title",
+          "product_categories",
+          "images",
+          "is_featured",
+          "is_hot",
+          "price",
+          "sale_price",
+          "vendor",
+          "brands",
+          "review",
+          "is_out_of_stock",
+          "depot",
+          "inventory",
+          "variants.images",
+          "variants.price",
+          "variants.sale_price",
+          "variants.thumbnail",
+          "variants.name",
+          "variants.sizes.name",
+          "variants.sizes.character",
+          "variants.is_sale",
+          "is_active",
+          "is_sale",
+          "thumbnail",
+          "collections",
+          "slug",
+          "stores"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::product.product",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "title",
+          "product_categories",
+          "images",
+          "is_featured",
+          "is_hot",
+          "price",
+          "sale_price",
+          "vendor",
+          "brands",
+          "review",
+          "is_out_of_stock",
+          "depot",
+          "inventory",
+          "variants.images",
+          "variants.price",
+          "variants.sale_price",
+          "variants.thumbnail",
+          "variants.name",
+          "variants.sizes.name",
+          "variants.sizes.character",
+          "variants.is_sale",
+          "is_active",
+          "is_sale",
+          "thumbnail",
+          "collections",
+          "slug",
+          "stores"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "title",
+          "product_categories",
+          "images",
+          "is_featured",
+          "is_hot",
+          "price",
+          "sale_price",
+          "vendor",
+          "brands",
+          "review",
+          "is_out_of_stock",
+          "depot",
+          "inventory",
+          "variants.images",
+          "variants.price",
+          "variants.sale_price",
+          "variants.thumbnail",
+          "variants.name",
+          "variants.sizes.name",
+          "variants.sizes.character",
+          "variants.is_sale",
+          "is_active",
+          "is_sale",
+          "thumbnail",
+          "collections",
+          "slug",
+          "stores"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::promotions.promotions",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "items.name",
+          "items.slug",
+          "items.image",
+          "items.link"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::promotions.promotions",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::promotions.promotions",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "items.name",
+          "items.slug",
+          "items.image",
+          "items.link"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::promotions.promotions",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "items.name",
+          "items.slug",
+          "items.image",
+          "items.link"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::restaurant-page.restaurant-page",
+      "properties": {
+        "fields": [
+          "header.theme",
+          "header.label",
+          "header.title",
+          "slug",
+          "categoryText",
+          "PlaceText",
+          "restaurantsPerPage",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::restaurant-page.restaurant-page",
+      "properties": {
+        "fields": [
+          "header.theme",
+          "header.label",
+          "header.title",
+          "slug",
+          "categoryText",
+          "PlaceText",
+          "restaurantsPerPage",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::restaurant-page.restaurant-page",
+      "properties": {
+        "fields": [
+          "header.theme",
+          "header.label",
+          "header.title",
+          "slug",
+          "categoryText",
+          "PlaceText",
+          "restaurantsPerPage",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::restaurant.restaurant",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "images",
+          "price",
+          "information.description",
+          "information.opening_hours.day_interval",
+          "information.opening_hours.opening_hour",
+          "information.opening_hours.closing_hour",
+          "information.location.address",
+          "information.location.website",
+          "information.location.phone",
+          "socialNetworks.url",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "category",
+          "place",
+          "reviews"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::restaurant.restaurant",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "images",
+          "price",
+          "information.description",
+          "information.opening_hours.day_interval",
+          "information.opening_hours.opening_hour",
+          "information.opening_hours.closing_hour",
+          "information.location.address",
+          "information.location.website",
+          "information.location.phone",
+          "socialNetworks.url",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "category",
+          "place",
+          "reviews"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::restaurant.restaurant",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "images",
+          "price",
+          "information.description",
+          "information.opening_hours.day_interval",
+          "information.opening_hours.opening_hour",
+          "information.opening_hours.closing_hour",
+          "information.location.address",
+          "information.location.website",
+          "information.location.phone",
+          "socialNetworks.url",
+          "blocks",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "seo.metaSocial.socialNetwork",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.keywords",
+          "seo.metaRobots",
+          "seo.structuredData",
+          "seo.metaViewport",
+          "seo.canonicalURL",
+          "category",
+          "place",
+          "reviews"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::review.review",
+      "properties": {
+        "fields": [
+          "content",
+          "note",
+          "author",
+          "restaurant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::review.review",
+      "properties": {
+        "fields": [
+          "content",
+          "note",
+          "author",
+          "restaurant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::review.review",
+      "properties": {
+        "fields": [
+          "content",
+          "note",
+          "author",
+          "restaurant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::store.store",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "address",
+          "phone",
+          "products",
+          "thumbnail"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::store.store",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::store.store",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "address",
+          "phone",
+          "products",
+          "thumbnail"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::store.store",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "address",
+          "phone",
+          "products",
+          "thumbnail"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    }
+  ]
+}

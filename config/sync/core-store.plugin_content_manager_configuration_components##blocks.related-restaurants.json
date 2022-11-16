@@ -1,0 +1,80 @@
+{
+  "key": "plugin_content_manager_configuration_components::blocks.related-restaurants",
+  "value": {
+    "uid": "blocks.related-restaurants",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "header": {
+        "edit": {
+          "label": "header",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "header",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "restaurants": {
+        "edit": {
+          "label": "restaurants",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "restaurants",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "header",
+        "restaurants"
+      ],
+      "edit": [
+        [
+          {
+            "name": "header",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "restaurants",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

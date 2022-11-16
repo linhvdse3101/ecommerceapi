@@ -1,0 +1,174 @@
+{
+  "key": "plugin_content_manager_configuration_components::variants.items",
+  "value": {
+    "uid": "variants.items",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "isImage": {
+        "edit": {
+          "label": "isImage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "isImage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "desc": {
+        "edit": {
+          "label": "desc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "desc",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "btn_text": {
+        "edit": {
+          "label": "btn_text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "btn_text",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "desc_hightlight": {
+        "edit": {
+          "label": "desc_hightlight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "desc_hightlight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "text_on_top": {
+        "edit": {
+          "label": "text_on_top",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "text_on_top",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "isImage",
+        "image",
+        "title"
+      ],
+      "edit": [
+        [
+          {
+            "name": "isImage",
+            "size": 4
+          },
+          {
+            "name": "image",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "desc",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "btn_text",
+            "size": 6
+          },
+          {
+            "name": "desc_hightlight",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "text_on_top",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
