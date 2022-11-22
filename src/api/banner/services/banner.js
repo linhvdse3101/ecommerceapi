@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * collection service
+ * banner service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::collection.collection');
+module.exports = createCoreService('api::banner.banner');

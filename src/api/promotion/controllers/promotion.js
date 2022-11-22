@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * collection controller
+ * promotion controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::collection.collection');
+module.exports = createCoreController('api::promotion.promotion');

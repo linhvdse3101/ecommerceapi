@@ -81,7 +81,6 @@ ssl
 .idea
 nbproject
 public/uploads/*
-src/plugins/*
 !public/uploads/.gitkeep
 
 ############################
@@ -111,5 +110,6 @@ coverage
 license.txt
 exports
 *.cache
+dist
 build
 .strapi-updater.json

@@ -1,43 +1,30 @@
 {
-  "name": "ldjvit",
+  "name": "apiproject",
   "private": true,
   "version": "0.1.0",
-  "description": "api ecommerce",
+  "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "seed": "node script/seed.js"
+    "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
-    "@offset-dev/strapi-calendar": "^0.0.8",
-    "@strapi/plugin-graphql": "^4.4.5",
-    "@strapi/plugin-i18n": "4.4.5",
-    "@strapi/plugin-seo": "^1.7.2",
-    "@strapi/plugin-users-permissions": "4.4.5",
-    "@strapi/strapi": "4.4.5",
-    "@webbio/strapi-plugin-scheduler": "^0.1.2",
-    "better-sqlite3": "^7.6.2",
-    "fs-extra": "^10.0.0",
-    "lodash": "^4.17.21",
-    "slugify": "^1.6.5",
-    "strapi-plugin-config-sync": "^1.0.4",
-    "strapi-plugin-cookie-manager": "^1.0.7",
-    "strapi-plugin-sitemap": "^2.0.8",
-    "strapi-plugin-todo": "^0.0.9",
-    "unzip-stream": "^0.3.1",
-    "uuid-v4": "^0.1.0"
+    "@strapi/plugin-graphql": "4.5.1",
+    "@strapi/plugin-i18n": "4.5.1",
+    "@strapi/plugin-users-permissions": "4.5.1",
+    "@strapi/strapi": "4.5.1",
+    "better-sqlite3": "7.4.6"
   },
   "author": {
-    "name": "Vo duy linh"
+    "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "0ce2c844-73f4-41fa-a986-9f50226d1ce9"
+    "uuid": "cdf5905f-490e-4c8b-936d-fbb94f0e8859"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

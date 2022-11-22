@@ -1,7 +1,9 @@
-'use strict'
-const {routes} = require("./custom-product");
-const { createCoreRouter } = require("@strapi/strapi").factories;
+'use strict';
 
-module.exports = createCoreRouter("api::product.product", {
-  routes
-});
+/**
+ * product router
+ */
+
+const { createCoreRouter } = require('@strapi/strapi').factories;
+
+module.exports = createCoreRouter('api::product.product');

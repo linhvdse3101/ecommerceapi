@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * collection router
+ * promotion router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::collection.collection');
+module.exports = createCoreRouter('api::promotion.promotion');

@@ -1,60 +1,57 @@
-# FoodAdvisor - API
+# 🚀 Getting started with Strapi
 
-![FoodAdvisor](../foodadvisor.png)
+Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
-Welcome to FoodAdvisor, the official Strapi demo application.
+### `develop`
 
-## Get started
-
-You can get started with this project locally on your machine by following the instructions below or you can [request a private instance on our website](https://strapi.io/demo).
-
-## Prerequisites
-
-Be sure to have the correct env variabless:
-
-- Strapi:
-  - `STRAPI_ADMIN_CLIENT_URL=<url-of-nextjs>`
-  - `STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=<a-random-token>`
-
-## Start Strapi
-
-- Run the following command in your `./foodadvisor/api` folder:
+Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
 ```
-yarn && yarn seed && yarn develop
+npm run develop
+# or
+yarn develop
 ```
 
-This will install the dependencies, fill your application with data and run your server. You can run these commands separately.
+### `start`
 
-## Credentials
+Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
-- Super Admin:
-  - email: admin@strapidemo.com
-  - password: welcomeToStrapi123
+```
+npm run start
+# or
+yarn start
+```
 
-- Editor
-  - email: editor@strapidemo.com
-  - password: welcomeToStrapi123
+### `build`
 
-- Author
-  - email: author@strapidemo.com
-  - password: welcomeToStrapi123
+Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
-## Publication Workflow
+```
+npm run build
+# or
+yarn build
+```
 
-FoodAdvisor contains a publication workflow workaround for the `article` content-type only. It contains two parts:
+## ⚙️ Deployment
 
-- Notification system: If an article is related to an editor when the status of the article (In review, Changes requested) changes, both editor and author will receive an email notification depending on the nature of the status. In order to make this part works, you need to uncomment the parts of the `src/api/article/content-types/lifecycles.js` file that actually sends emails. Also, you'll need to configure an [email provider](https://docs.strapi.io/developer-docs/latest/plugins/email.html)
+Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
 
-If an article is not related to an editor, no emails will be sent.
+## 📚 Learn more
 
-- Admin interface: In the content manager, edit view of an article, you'll be able to see the stages of the publication workflow of your article. A component has been injected in the right-links injection zone. A button will open a modal listing all the stages (Draft <> In review, In review <> Changes requested, etc...)
-  - Draft => In review: If activated, an email will be sent to the related editor.
-  - In review => Changes requested: If activated, an email will be sent to the author.
-  - Changes requested => In review: If activated, an email will be sent to the related editor.
-  - In review => Publication Scheduled: If activated, an email will be sent to the author.
-  - In review => Published: If activated, an email will be sent to the author.
-  - Publishing (RBAC) the article will automatically set the `publicationState` to `Published`
-  - Setting the `publicationState` to Published will automatically publish the article (RBAC)
+- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
+- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
+- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
+- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
+- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
 
-Another component has been injected into the list view. For author users, a button allows them to automatically apply a filter `publicationState == Changes requested` so that authors can quickly see any articles not published yet that need changes. For editor users, a button allows them to automatically apply a filter `publicationState == In review` so that editors can quickly see any articles not published yet that need to be reviewed.
+Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+
+## ✨ Community
+
+- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
+- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
+- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+
+---
+
+<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>

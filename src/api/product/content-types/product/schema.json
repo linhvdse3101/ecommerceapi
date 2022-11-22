@@ -1,38 +1,27 @@
 {
   "kind": "collectionType",
-  "connection": "default",
-  "collectionName": "product",
+  "collectionName": "products",
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product"
+    "displayName": "product",
+    "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "product_categories": {
-      "via": "products",
-      "collection": "product-categories",
-      "dominant": true
-    },
-    "images": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
     "is_featured": {
-      "type": "boolean",
-      "default": false
+      "type": "integer",
+      "default": 0
     },
     "is_hot": {
-      "type": "boolean",
-      "default": false
+      "type": "integer",
+      "default": 0
     },
     "price": {
       "type": "decimal"
@@ -43,11 +32,6 @@
     "vendor": {
       "type": "string"
     },
-    "brands": {
-      "collection": "brand",
-      "via": "products",
-      "dominant": true
-    },
     "review": {
       "type": "integer"
     },
@@ -56,15 +40,11 @@
       "default": false
     },
     "depot": {
-      "type": "integer"
+      "type": "biginteger"
     },
     "inventory": {
-      "type": "integer"
-    },
-    "variants": {
-      "type": "component",
-      "repeatable": true,
-      "component": "variants.variants"
+      "type": "biginteger",
+      "default": "0"
     },
     "is_active": {
       "type": "boolean",
@@ -74,22 +54,23 @@
       "type": "boolean",
       "default": false
     },
-    "thumbnail": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "collections": {
-      "collection": "collection",
-      "via": "products"
-    },
     "slug": {
-      "type": "string"
+      "type": "uid",
+      "targetField": "title"
     },
-    "stores": {
-      "via": "products",
-      "collection": "store"
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "products"
     }
   }
 }
