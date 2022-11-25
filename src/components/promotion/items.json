@@ -14,14 +14,10 @@
       "type": "string"
     },
     "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      "type": "text"
+    },
+    "thumbnail": {
+      "type": "text"
     }
   }
 }
