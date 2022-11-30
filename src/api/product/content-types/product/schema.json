@@ -84,6 +84,17 @@
       "type": "component",
       "repeatable": true,
       "component": "products.product-images"
+    },
+    "product_imgs": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
