@@ -64,9 +64,6 @@
       "target": "api::collection.collection",
       "inversedBy": "products"
     },
-    "image": {
-      "type": "text"
-    },
     "product_category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -78,12 +75,6 @@
       "relation": "manyToOne",
       "target": "api::brand.brand",
       "inversedBy": "products"
-    },
-    "product_images": {
-      "displayName": "product_images",
-      "type": "component",
-      "repeatable": true,
-      "component": "products.product-images"
     },
     "product_imgs": {
       "type": "media",

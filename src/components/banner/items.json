@@ -26,7 +26,12 @@
       "type": "string"
     },
     "image": {
-      "type": "text"
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
