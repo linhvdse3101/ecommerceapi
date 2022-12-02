@@ -12,7 +12,10 @@ module.exports = ({ env }) => ({
           },
         },
         actionOptions: {
-          upload: {},
+          upload: {
+            use_filename: true,
+            unique_filename: true,
+          },
           uploadStream: {},
           delete: {},
         },

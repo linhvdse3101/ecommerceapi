@@ -6,19 +6,21 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
+          'connect-src': ["'self'","'unsafe-inline'","'unsafe-eval'", 'https:'],
           'img-src': [
-            "'self'",
+            " * 'self'",
+            "'unsafe-inline'",
+            "'unsafe-eval'",
             'data:',
             'blob:',
-            // 'ldjvit.com',
+            // 'localhost:1337',
             'ldjvit-aws-s3-images.s3.us-east-1.amazonaws.com',
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
-            // 'ldjvit.com',
+            // 'localhost:1337',
             'ldjvit-aws-s3-images.s3.us-east-1.amazonaws.com',
           ],
           upgradeInsecureRequests: null,
