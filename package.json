@@ -9,9 +9,7 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "aws-sdk": "2.1260.0",
     "@strapi/plugin-color-picker": "4.5.2",
     "@strapi/plugin-documentation": "4.5.2",
     "@strapi/plugin-graphql": "4.5.2",
@@ -23,8 +21,12 @@
     "@strapi/provider-upload-cloudinary": "4.5.2",
     "@strapi/strapi": "4.5.2",
     "@vscode/sqlite3": "5.0.8",
+    "aws-sdk": "2.1260.0",
     "better-sqlite3": "7.4.6",
-    "lodash": "4.17.21"
+    "lodash": "4.17.21",
+    "strapi-plugin-import-export-content": "^0.4.2",
+    "strapi-plugin-import-export-entries": "^1.18.0",
+    "strapi-stripe": "^2.6.3"
   },
   "author": {
     "name": "A Strapi developer"

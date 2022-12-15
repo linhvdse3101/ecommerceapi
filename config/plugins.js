@@ -14,11 +14,14 @@ module.exports = ({ env }) => ({
         actionOptions: {
           upload: {
             use_filename: true,
-            unique_filename: true,
+            unique_filename: false,
           },
           uploadStream: {},
           delete: {},
         },
       },
+    },
+    'import-export-entries': {
+      enabled: true,
     },
   });
