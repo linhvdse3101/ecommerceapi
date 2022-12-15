@@ -24,7 +24,6 @@
     "aws-sdk": "2.1260.0",
     "better-sqlite3": "7.4.6",
     "lodash": "4.17.21",
-    "strapi-plugin-import-export-content": "^0.4.2",
     "strapi-plugin-import-export-entries": "^1.18.0",
     "strapi-stripe": "^2.6.3"
   },
