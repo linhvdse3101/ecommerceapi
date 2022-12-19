@@ -21,17 +21,6 @@ module.exports = ({ env }) => ({
         },
       },
     },
-    "vercel-deploy": {
-      enabled: true,
-      config: {
-        deployHook:
-          "https://api.vercel.com/v1/integrations/prj_JL0kXnZ5wVJNDRS7e0GheviU0sAx",
-        apiToken: "4lWiEcWXVhNuGeblTLBju79O",
-        appFilter: "ecommerceapi",
-        teamFilter: "ecommerceapi",
-        roles: ["super-admin", "user", "guest"],
-      },
-    },
     'import-export-entries': {
       enabled: true,
     },
