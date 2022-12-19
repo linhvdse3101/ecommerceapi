@@ -3,6 +3,6 @@ module.exports = ({ env }) => ({
   port: env.int('PORT', 1337),
   app: {
     keys: env.array('ADMIN_JWT_SECRET','API_TOKEN_SALT','APP_KEYS','AWS_ACCESS_KEY_ID','AWS_ACCESS_SECRET','AWS_BUCKET','AWS_REGION',
-    'DATABASE_FILENAME','JWT_SECRET', 'NODE_ENV'),
+    'DATABASE_FILENAME','JWT_SECRET'),
   },
 });
