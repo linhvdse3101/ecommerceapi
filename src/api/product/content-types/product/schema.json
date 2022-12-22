@@ -159,7 +159,7 @@
     "bar_code": {
       "type": "string",
       "required": true,
-      "unique": true,
+      "unique": false,
       "minLength": 6,
       "pluginOptions": {
         "i18n": {
